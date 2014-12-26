@@ -1,0 +1,1 @@
+Basic image-viewing app that pulls from the Chute API using Backbone.js and Masonry for UI. 
