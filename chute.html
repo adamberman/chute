@@ -8,7 +8,18 @@
     <div id="main"></div>
 
     <script type="text/template" id="image-template">
-        <img data-lightbox="<%= image.get('id') %>" data-title="<%= image.get('caption') %>" src="<%= image.get('url') %>/w/300" onError="this.onerror = ''; var $container = $('.images'); var item = $container.masonry('getItem', this.parentElement); $container.masonry('hide', [item]); $container.masonry('reloadItems');">
+        <a 
+          href="<%= image.get('url') %>" 
+          data-lightbox="<%= image.get('id') %>" 
+          data-title="<%= image.get('caption') %>">
+          <img 
+            src="<%= image.get('url') %>/w/300" 
+            onError="this.onerror = ''; 
+            var $container = $('.images'); 
+            var item = $container.masonry('getItem', this.parentElement.parentElement); 
+            $container.masonry('hide', [item]); 
+            $container.masonry('reloadItems');">
+        </a>
     </script>
 
     <script type="text/template" id="index-template">
