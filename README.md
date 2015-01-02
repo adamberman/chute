@@ -8,5 +8,7 @@ Basic Features:
 
 *	Clicking on a photo creates a lightbox with controls, using Lightbox library
 
-*	Infinite scroll implemented with the help of Backbone-Paginator
+*	Infinite scroll implemented with the help of Backbone-Paginator]
+
+* Filters out broken images using in-browser error-handling
 
